@@ -4,15 +4,27 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: '<json:package.json>',
     meta: {
-      banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+      banner: 
+        '/**\n' +
+        '* <%= pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
         '<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>' +
-        '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-        ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
+        '*\n' +
+        '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>\n' +
+        '* Licensed under the <%= _.pluck(pkg.licenses, "type").join(", ") %> license.\n' +
+        '*/'
     },
     concat: {
       dist: {
-        src: ['<banner:meta.banner>', '<file_strip_banner:lib/<%= pkg.name %>.js>'],
+        src: [
+            '<banner:meta.banner>',
+            'lib/wrappers/intro.txt',
+            
+            '<file_strip_banner:lib/core.js>',
+            '<file_strip_banner:lib/register.js>',
+            
+            'lib/wrappers/outro.txt' 
+        ],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },

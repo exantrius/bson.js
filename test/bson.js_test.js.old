@@ -1,5 +1,5 @@
 /*global require:true */
-var bson_js = require('../lib/bson.js.js');
+var bson_js = require('../lib/bson.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========

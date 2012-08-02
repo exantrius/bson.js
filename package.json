@@ -1,5 +1,5 @@
 {
-  "name": "bson.js",
+  "name": "bson",
   "description": "The BSON implementation for browsers and server-side",
   "version": "0.1.0",
   "homepage": "https://github.com/exantrius/bson.js",
