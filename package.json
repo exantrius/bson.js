@@ -2,22 +2,22 @@
   "name": "bson.js",
   "description": "The BSON implementation for browsers and server-side",
   "version": "0.1.0",
-  "homepage": "https://github.com/alius/bson.js",
+  "homepage": "https://github.com/exantrius/bson.js",
   "author": {
     "name": "Andrew Sednev",
     "email": "exantrius@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alius/bson.js.git"
+    "url": "git://github.com/exantrius/bson.js.git"
   },
   "bugs": {
-    "url": "https://github.com/alius/bson.js/issues"
+    "url": "https://github.com/exantrius/bson.js/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/alius/bson.js/blob/master/LICENSE-MIT"
+      "url": "https://github.com/exantrius/bson.js/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/bson.js",
