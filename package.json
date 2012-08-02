@@ -1,0 +1,34 @@
+{
+  "name": "bson.js",
+  "description": "The BSON implementation for browsers and server-side",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alius/bson.js",
+  "author": {
+    "name": "Andrew Sednev",
+    "email": "exantrius@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alius/bson.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alius/bson.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/alius/bson.js/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/bson.js",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.11"
+  },
+  "keywords": []
+}
